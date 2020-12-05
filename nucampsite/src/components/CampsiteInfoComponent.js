@@ -1,11 +1,9 @@
 import React from "react";
 import {
   Card,
-  CardBody,
   CardImg,
-  CardImgOverlay,
   CardText,
-  CardTitle,
+  CardBody,
   Breadcrumb,
   BreadcrumbItem,
 } from "reactstrap";
@@ -63,12 +61,10 @@ function CampsiteInfo(props) {
               </BreadcrumbItem>
               <BreadcrumbItem active>{props.campsite.name}</BreadcrumbItem>
             </Breadcrumb>
-
             <h2>{props.campsite.name}</h2>
             <hr />
           </div>
         </div>
-
         <div className="row">
           <RenderCampsite campsite={props.campsite} />
           <RenderComments comments={props.comments} />
